@@ -1,12 +1,33 @@
 #logoBar{
   width: 30vw;
   height: 100vh;
+  font-size: xx-large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #siteLogo{
+  display: inline-block;
   width: 100%;
 }
+
 body {
   display: flex;
+  background-color: orange;
+  color: white;
+  font-size: xx-large;
+}
+/* Sources: https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_ex1
+/*When the screen is less 600px or less, the logobar should display at the top */
+@media screen and (max-width: 600px){
+  body{
+  flex-direction: column;
+  }
+}
+/* When the screen is greater than 600px, the logo bar should display at the left side */
+@media screen and (min-width: 601px){
+  body{
+  flex-direction: row;
+  }
+
 }
 #staffGallery{
   width: 70vw;
@@ -18,3 +39,24 @@ body {
   height: auto;
   height: 300px;
 }
+/* A wrapper container that wraps all the cards and containers so I can evenly space them*/
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1, .card2, .card3, .card4{ 
+  flex: 1;
+  background-color: whitesmoke;
+  margin: 20px;
+  margin-bottom: 350px;
+}
+.container1, .container2, .container3, .container4{
+  display: flex;
+  background-color: green;
+  width: 250px;
+  align-content: center;
+}
+
+
+
