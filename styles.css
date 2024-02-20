@@ -54,7 +54,7 @@ body {
 .container1, .container2, .container3, .container4{
   display: flex;
   background-color: green;
-  width: 250px;
+  width: 260px;
   align-content: center;
 }
 
